@@ -17,7 +17,7 @@ import { Grid } from "risoflora-ui"
 
 #### Adereços (props)
 
-| Nome  |Tipo  |Defalt |Descrição|
+| Nome  |Tipo  |Padrão |Descrição|
 |:-----:|:----:|:-----:|:--------|
 |`children`|`node`||Conteúdo do componente|
 |`style`|`Array`||É usado para digitar o objeto de estilo que consiste em nomes e valores de propriedades CSS.|
