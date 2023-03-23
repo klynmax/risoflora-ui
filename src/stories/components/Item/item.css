@@ -1,0 +1,24 @@
+.item {
+    height: 30px;
+    width: 100%;
+    background-color: #2196f3;
+    border: 1px solid;
+    text-align: center;
+    color: #ffffff;
+    align-items: center;
+}
+
+.responsive-item {
+    height: 30px;
+    width: 140px;
+    background-color: #2196f3;
+    border: 1px solid;
+    text-align: center;
+    color: #ffffff;
+    align-items: center;
+}
+
+.text {
+    align-items: center;
+    /*margin-top: px;*/
+}
