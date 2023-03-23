@@ -1,4 +1,3 @@
-import React from "react";
 import "./item.css";
 
 export interface GridProps {
