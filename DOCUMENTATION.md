@@ -1,19 +1,16 @@
-# [Documentação da api](https://stackedit.io)
+# Documentação da api
 Documento de referência da API. Neste guia é possível aprender sobre as props, css e outras APIs suportado por cada componente.
-
 *******
 ##### Índice
  1. [Divider](#divider)
  1. [Grid](#grid)
 *******
-
 <div id='divider'/>
-
-## [Divider](https://stackedit.io)
+## Divider
 
 Um divisor é uma linha fina que separam os conteúdos em grupos bem definidos.
 
-#### [Importar](https://stackedit.io)
+#### Importar
 
 ```
 import Divider from "risoflora-ui";
@@ -23,7 +20,7 @@ ou
 import { Divider } from "risoflora-ui"
 ````
 
-#### [Adereços (props)](https://stackedit.io)
+#### Adereços (props)
 
 | Nome  |Tipo  |Padrão |Descrição|
 |:-----:|:----:|:-----:|:--------|
@@ -33,12 +30,11 @@ import { Divider } from "risoflora-ui"
 <br />
 
 <div id='grid'/>
-
-## [Grid](https://stackedit.io)
+## Grid
 
 Layout responsivo adaptável ao tamanho e orientações da tela, permitindo uma ampla variedade de designs.
 
-#### [Importar](https://stackedit.io)
+#### Importar
 
 ```
 import Grid from "risoflora-ui";
@@ -48,7 +44,7 @@ ou
 import { Grid } from "risoflora-ui"
 ````
 
-#### [Adereços (props)](https://stackedit.io)
+#### Adereços (props)
 
 | Nome  |Tipo  |Padrão |Descrição|
 |:-----:|:----:|:-----:|:--------|
