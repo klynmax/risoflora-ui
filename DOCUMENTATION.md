@@ -8,6 +8,7 @@ Documento de referência da API. Neste guia é possível aprender sobre as props
 *******
 
 <div id='divider'/>
+
 ## [Divider](https://stackedit.io)
 
 Um divisor é uma linha fina que separam os conteúdos em grupos bem definidos.
