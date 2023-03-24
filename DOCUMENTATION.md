@@ -1,11 +1,42 @@
-# Componentes da da api
-
+# [Documentação da api](https://stackedit.io)
 Documento de referência da API. Neste guia é possível aprender sobre as props, css e outras APIs suportado por cada componente.
 
-## Grid
+*******
+##### Índice
+ 1. [Divider](#divider)
+ 1. [Grid](#grid)
+*******
+
+<div id='divider'/>
+## [Divider](https://stackedit.io)
+
+Um divisor é uma linha fina que separam os conteúdos em grupos bem definidos.
+
+#### [Importar](https://stackedit.io)
+
+```
+import Divider from "risoflora-ui";
+```
+ou
+````
+import { Divider } from "risoflora-ui"
+````
+
+#### [Adereços (props)](https://stackedit.io)
+
+| Nome  |Tipo  |Padrão |Descrição|
+|:-----:|:----:|:-----:|:--------|
+|`style`|`Array`||É usado para digitar o objeto de estilo que consiste em nomes e valores de propriedades CSS.|
+|`name`|`string`|{}|É utilizado para dar um título ao componente|
+|`horizontal`|`boolean`|'false'|Altera a orientação do compenente para horizontal|
+<br />
+
+<div id='grid'/>
+## [Grid](https://stackedit.io)
+
 Layout responsivo adaptável ao tamanho e orientações da tela, permitindo uma ampla variedade de designs.
 
-#### Importar
+#### [Importar](https://stackedit.io)
 
 ```
 import Grid from "risoflora-ui";
@@ -15,7 +46,7 @@ ou
 import { Grid } from "risoflora-ui"
 ````
 
-#### Adereços (props)
+#### [Adereços (props)](https://stackedit.io)
 
 | Nome  |Tipo  |Padrão |Descrição|
 |:-----:|:----:|:-----:|:--------|
@@ -29,6 +60,3 @@ import { Grid } from "risoflora-ui"
 |`md`|`number`|12|Define o número de colunas que o item utiliza. Esse valor não pode ser maior que 12 que é o total de colunas do container.|
 |`lg`|`number`|12|Define o número de colunas que o item utiliza. Esse valor não pode ser maior que 12 que é o total de colunas do container.|
 |`xl`|`number`|12|Define o número de colunas que o item utiliza. Esse valor não pode ser maior que 12 que é o total de colunas do container.|
-
-
-
