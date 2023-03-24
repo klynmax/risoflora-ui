@@ -1,9 +1,12 @@
 .flex { display: flex; }
+
 .flex-row { flex-direction: row; }
+
 .sm-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
 }
+
 .sm-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;

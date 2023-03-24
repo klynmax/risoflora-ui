@@ -2,9 +2,35 @@
 Documento de referência da API. Neste guia é possível aprender sobre as props, css e outras APIs suportado por cada componente.
 *******
 ##### Índice
- 1. [Divider](#divider)
- 1. [Grid](#grid)
+ 1. [Container](#container)
+ 2. [Divider](#divider)
+ 3. [Grid](#grid)
 *******
+
+<div id='container'/>
+
+## Container
+
+Centraliza seu conteúdo horizontalmente.
+
+#### Importar
+
+```
+import Container from "risoflora-ui";
+```
+ou
+````
+import { Container } from "risoflora-ui"
+````
+
+#### Adereços (props)
+
+| Nome  |Tipo  |Padrão |Descrição|
+|:-----:|:----:|:-----:|:--------|
+|`children`|`node`||Conteúdo do componente|
+|`style`|`Array`||É usado para digitar o objeto de estilo que consiste em nomes e valores de propriedades CSS.|
+|`maxWidth`|`xs`<br/>`sm`<br/>`md`<br/>`lg`<br/>`xl`<br/>`string`||Determina a largura máxima do container. Responsiva como padrão, porém se o usuário desejar poderá utilizar os breakpoints para diferentes lagura do container.
+
 <div id='divider'/>
 
 ## Divider
@@ -28,7 +54,6 @@ import { Divider } from "risoflora-ui"
 |`style`|`Array`||É usado para digitar o objeto de estilo que consiste em nomes e valores de propriedades CSS.|
 |`name`|`string`|{}|É utilizado para dar um título ao componente|
 |`horizontal`|`boolean`|'false'|Altera a orientação do compenente para horizontal|
-<br />
 
 <div id='grid'/>
 

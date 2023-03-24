@@ -1,5 +1,5 @@
 import { Grid } from 'src/components/Grid/Grid';
-import { Divider, DividerProps } from '../../components/Divider/Divider';
+import { Divider, DividerProps } from '../components/Divider/Divider';
 
 const meta = {
     title: "Layout/Divider",

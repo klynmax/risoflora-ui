@@ -1,8 +1,7 @@
-import type { Meta, StoryObj, Story } from '@storybook/react';
-import { Grid, GridProps } from '../components/Grid/Grid';
+import { Grid } from '../components/Grid/Grid';
 import Item from './components/Item/item';
 import ResponsiveItem from './components/Item/responsiveItem';
-import HorizontalRuler from './components/HorizontalRuler';
+import { Divider } from './../components/Divider/Divider';
 
 const meta = {
     title: "Layout/Grid",
@@ -17,9 +16,11 @@ const meta = {
 
 export default meta;
 
+/**
+ * TODO: Criar todos os componentes com grid e excluir o componente Item 
+ */
+
 const array = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
-
-
 
 const style = {
     root: {
@@ -27,7 +28,6 @@ const style = {
         width: 10,
         backgroundColor: '#2196f3',
         border: '1px solid',
-        //textAlign: 'center',
         color: '#ffffff',
         alignItems: 'center'
     },
@@ -36,6 +36,24 @@ const style = {
         marginBottom: 10,
         width: '50%',
         margin: '50px'
+    },
+    gridColumn: {
+        height: 30,
+        width: '100%',
+        backgroundColor: '#2196f3',
+        border: '1px solid',
+        color: '#ffffff',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    alignItems: {
+        height: 30,
+        width: 500,
+        backgroundColor: '#2196f3',
+        border: '1px solid',
+        color: '#ffffff',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 }
 
@@ -89,7 +107,7 @@ const Template = (args: any) => (
 
 const TemplateJustify = (args: any) => (
     <>
-        <HorizontalRuler name="justify='flex-start'" />
+        <Divider name="justify='flex-start'" />
         <Grid {...args}>
             <Grid lg={12} justify="flex-start">
                 <Grid lg={2} style={style.root}>
@@ -107,7 +125,7 @@ const TemplateJustify = (args: any) => (
             </Grid>
         </Grid>
         
-        <HorizontalRuler name="justify='center'" />
+        <Divider name="justify='center'" />
 
         <Grid {...args}>
             <Grid lg={12} justify="center">
@@ -126,7 +144,7 @@ const TemplateJustify = (args: any) => (
             </Grid>
         </Grid>
         
-        <HorizontalRuler name="justify='flex-end'" />
+        <Divider name="justify='flex-end'" />
 
         <Grid {...args}>
             <Grid lg={12} justify="flex-end">
@@ -145,7 +163,7 @@ const TemplateJustify = (args: any) => (
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="justify='space-between'" />
+        <Divider name="justify='space-between'" />
 
         <Grid {...args}>
             <Grid lg={12} justify="space-between">
@@ -164,7 +182,7 @@ const TemplateJustify = (args: any) => (
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="justify='space-around'" />
+        <Divider name="justify='space-around'" />
 
         <Grid {...args}>
             <Grid lg={12} justify="space-around">
@@ -183,7 +201,7 @@ const TemplateJustify = (args: any) => (
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="justify='space-evenly'" />
+        <Divider name="justify='space-evenly'" />
 
         <Grid {...args}>
             <Grid lg={12} justify="space-evenly">
@@ -206,7 +224,7 @@ const TemplateJustify = (args: any) => (
 
 const TemplateFlex = (args: any) => (
     <>
-        <HorizontalRuler name="flexDirection='row'" />
+        <Divider name="flexDirection='row'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="row">
                 {
@@ -217,7 +235,7 @@ const TemplateFlex = (args: any) => (
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="flexDirection='row-reverse'" />
+        <Divider name="flexDirection='row-reverse'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="row-reverse">
                 {
@@ -228,23 +246,23 @@ const TemplateFlex = (args: any) => (
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="flexDirection='column'" />
+        <Divider name="flexDirection='column'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="column">
                 {
                     array.map(item => (
-                        <ResponsiveItem name={item} />
+                        <Grid style={style.gridColumn}>{item}</Grid>
                     ))
                 }
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="flexDirection='column-reverse'" />
+        <Divider name="flexDirection='column-reverse'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="column-reverse">
                 {
                     array.map(item => (
-                        <ResponsiveItem name={item} />
+                        <Grid style={style.gridColumn}>{item}</Grid>
                     ))
                 }
             </Grid>
@@ -254,34 +272,34 @@ const TemplateFlex = (args: any) => (
 
 const TemplateAlignItems = (args: any) => (
     <>
-        <HorizontalRuler name="alignItems='start'" />
+        <Divider name="alignItems='start'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="column" alignItems="start">
                 {
                     array.map(item => (
-                        <ResponsiveItem name={item} />
+                        <Grid style={style.alignItems}>{item}</Grid>
                     ))
                 }
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="alignItems='center'" />
+        <Divider name="alignItems='center'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="column" alignItems="center">
                 {
                     array.map(item => (
-                        <ResponsiveItem name={item} />
+                        <Grid style={style.alignItems}>{item}</Grid>
                     ))
                 }
             </Grid>
         </Grid>
 
-        <HorizontalRuler name="alignItems='end'" />
+        <Divider name="alignItems='end'" />
         <Grid {...args}>
             <Grid lg={12} flexDirection="column" alignItems="end">
                 {
                     array.map(item => (
-                        <ResponsiveItem name={item} />
+                        <Grid style={style.alignItems}>{item}</Grid>
                     ))
                 }
             </Grid>
