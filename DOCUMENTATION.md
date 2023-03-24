@@ -6,6 +6,7 @@ Documento de referência da API. Neste guia é possível aprender sobre as props
  1. [Grid](#grid)
 *******
 <div id='divider'/>
+
 ## Divider
 
 Um divisor é uma linha fina que separam os conteúdos em grupos bem definidos.
@@ -30,6 +31,7 @@ import { Divider } from "risoflora-ui"
 <br />
 
 <div id='grid'/>
+
 ## Grid
 
 Layout responsivo adaptável ao tamanho e orientações da tela, permitindo uma ampla variedade de designs.
