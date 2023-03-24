@@ -33,6 +33,7 @@ import { Divider } from "risoflora-ui"
 <br />
 
 <div id='grid'/>
+
 ## [Grid](https://stackedit.io)
 
 Layout responsivo adaptável ao tamanho e orientações da tela, permitindo uma ampla variedade de designs.
