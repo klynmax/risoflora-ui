@@ -5,7 +5,7 @@ type Variant = "defalt" | "square" | "rounded"
 type Group = "default" | "limited" | "all"
 
 export type AvatarProps = {
-    children: React.ReactNode
+    children: React.ReactNode,
     style?: React.CSSProperties,
     variant?: Variant,
     size?: string,
@@ -95,7 +95,7 @@ export const Avatar = (
                             `notify-badge`
                         }
                     >
-                        <div className="notify-text">{value !== undefined && value > 99 ? '99+' : value}</div>
+                        {value !== undefined && value > 99 ? '99+' : value}
                     </div>
                 )
             }
@@ -133,7 +133,7 @@ export const Avatar = (
                                 `notify-badge`
                             }
                         >
-                            <div className="notify-text">{value !== undefined && value > 99 ? '99+' : value}</div>
+                            {value !== undefined && value > 99 ? '99+' : value}
                         </div>
                     )
                 }
@@ -154,52 +154,6 @@ export const Avatar = (
             </div>
             )
         }
-            
-                {/* <div className="flex flex-row">
-                    {
-                        notify === true && (
-                            <div 
-                                className={
-                                    variant === 'square' || variant === 'rounded' ? `notify-badge-square` : 
-                                    `notify-badge`
-                                }
-                            >
-                                <div className="notify-text">{value !== undefined && value > 99 ? '99+' : value}</div>
-                            </div>
-                        )
-                    }
-                    <img 
-                        style={style} 
-                        className={
-                            variant === 'square' ? `square` : 
-                            variant === 'rounded' ? `rounded` :
-                            size === 'xs' ? `image xs` :
-                            size === 'sm' ? `image sm` :
-                            size === 'md' ? `image` :
-                            size === 'lg' ? `image lg` :
-                            'image'
-                        }
-                        src={src}
-                        alt={alt}
-                    />
-                </div> */}
-        
-        {/* <div className="flex flex-row">
-            <img 
-                style={style} 
-                className={
-                    variant === 'square' ? `square` : 
-                    variant === 'rounded' ? `rounded` :
-                    size === 'xs' ? `image xs` :
-                    size === 'sm' ? `image sm` :
-                    size === 'md' ? `image` :
-                    size === 'lg' ? `image lg` :
-                    'image'
-                }
-                src={src}
-                alt={alt}
-            />
-        </div> */}
         </>
     )
 }

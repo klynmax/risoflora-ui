@@ -15,6 +15,7 @@
     height: 50px;
     object-fit: cover;
     width: 50px;
+    /* border-width: 2px; */
 }
 
 .image-group {
@@ -87,12 +88,17 @@
     font-size: 9px;
     color: #fff;
     font-weight: bold;
+
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.notify-text {
+/* .notify-text {
     margin-top: 3px;
     font-weight: bold;
-}
+} */
 
 .notify-badge-square {
     border-radius: 50%;
@@ -106,6 +112,10 @@
     font-size: 9px;
     color: #fff;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .group-text {
     margin-top: 10px;
