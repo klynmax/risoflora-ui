@@ -28,13 +28,13 @@ export const AvatarName = (
       color += `00${value.toString(16)}`.slice(-2);
     }
       
-      return color;
+    return color;
   }
       
   function stringAvatar(name: string) {
     return {
       style: {
-        backgroundColor: stringToColor(name),
+        backgroundColor: stringToColor(name)
       },
       children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
     };
@@ -42,8 +42,7 @@ export const AvatarName = (
 
   return (
     <div 
-      {...stringAvatar(userName? userName : 'User Name')} 
-      style={style} 
+      {...stringAvatar(userName? userName : 'Maria Ediarda')}
       className="name" 
     />
   )

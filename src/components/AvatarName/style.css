@@ -1,14 +1,15 @@
 .name {
-    border-radius: 50%;
-    height: 50px;
-    object-fit: cover;
-    width: 50px;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
   

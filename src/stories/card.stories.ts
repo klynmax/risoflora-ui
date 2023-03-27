@@ -19,6 +19,6 @@ const meta = {
   export const Primary: Story = {
     args: {
       title: "Card Title",
-      description: "This is a card",
+      description: "This is a card - Example",
     },
   };
