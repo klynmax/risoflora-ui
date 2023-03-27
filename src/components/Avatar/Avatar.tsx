@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import './style.css';
 
-type Variant = "defalt" | "square" | "rounded"
-type Group = "default" | "limited" | "all"
+type Variant = "circular" | "square" | "rounded"
+type Group = "limited" | "all"
 
 export type AvatarProps = {
     children: React.ReactNode,
@@ -123,7 +123,7 @@ export const Avatar = (
             )
         }
         {
-            group === 'default' || group === undefined && (
+            group === undefined && (
                 <div className="flex flex-row">
                 {
                     notify === true && (

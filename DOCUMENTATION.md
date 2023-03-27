@@ -1,11 +1,70 @@
-# Documentação da api
-Documento de referência da API. Neste guia é possível aprender sobre as props, css e outras APIs suportado por cada componente.
 *******
 ##### Índice
- 1. [Container](#container)
- 2. [Divider](#divider)
- 3. [Grid](#grid)
+ 1. [Documentação da api](#documentation)
+ 2. [Avatar](#avatar)
+ 3. [AvatarName](#avatarName)
+ 4. [Container](#container)
+ 5. [Divider](#divider)
+ 6. [Grid](#grid)
 *******
+
+<div id='documentation'/>
+
+# Documentação da api
+Documento de referência da API. Neste guia é possível aprender sobre as props, css e outras APIs suportado por cada componente.
+
+<div id='avatar'/>
+
+# Avatar
+
+Usado para exibir imagem ou marca.
+
+#### Importar
+
+```
+import Avatar from "risoflora-ui";
+```
+ou
+````
+import { Avatar } from "risoflora-ui";
+````
+
+#### Adereços (props)
+
+| Nome  |Tipo  |Padrão |Descrição|
+|:-----:|:----:|:-----:|:--------|
+|`style`|`Array`||É usado para digitar o objeto de estilo que consiste em nomes e valores de propriedades CSS.|
+|`variant`|`circular`<br/>`square`<br/>`rounded`|`circular`|Define o formato da imagem.|
+|`size`|`string`<br/>`xs`<br/>`sm`<br/>`md`<br/>`lg`|`md`|Define o tamanho do avatar.|
+|`src`|`string`||Recebe a url da imagem.|
+|`alt`|`string`||Usado junto ao src para fornecer um atributo alt para a img.|
+|`notify`|`boolean`|`false`|Define um badge de notificação na imagem.|
+|`value`|`number`||Insere o total de notificação ao badge.|
+|`group`|`limited`<br/>`all`||Define o total de imagem no grupo.|
+|`spacing`|`boolean`|`false`|Define se haverá espaço entre as imagens no modo group.|
+
+<div id='avatarName'/>
+
+## AvatarName
+
+Avatar contendo caracteres simples que retornam as iniciais do nome e sobrenome do usuário.
+
+#### Importar
+
+```
+import AvatarName from "risoflora-ui";
+```
+ou
+````
+import { AvatarName } from "risoflora-ui";
+````
+
+#### Adereços (props)
+
+| Nome  |Tipo  |Padrão |Descrição|
+|:-----:|:----:|:-----:|:--------|
+|`style`|`Array`||É usado para digitar o objeto de estilo que consiste em nomes e valores de propriedades CSS.|
+|`userName`|`string`||Define o nome e sobrenome do usuário usados para redenrização|
 
 <div id='container'/>
 
@@ -20,7 +79,7 @@ import Container from "risoflora-ui";
 ```
 ou
 ````
-import { Container } from "risoflora-ui"
+import { Container } from "risoflora-ui";
 ````
 
 #### Adereços (props)
@@ -44,7 +103,7 @@ import Divider from "risoflora-ui";
 ```
 ou
 ````
-import { Divider } from "risoflora-ui"
+import { Divider } from "risoflora-ui";
 ````
 
 #### Adereços (props)
@@ -68,7 +127,7 @@ import Grid from "risoflora-ui";
 ```
 ou
 ````
-import { Grid } from "risoflora-ui"
+import { Grid } from "risoflora-ui";
 ````
 
 #### Adereços (props)
