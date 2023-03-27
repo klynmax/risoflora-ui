@@ -4,3 +4,4 @@ export { Divider } from './components/Divider/Divider';
 export { Container } from './components/Container/Container';
 export { Avatar } from './components/Avatar/Avatar';
 export { AvatarName } from './components/AvatarName/AvatarName';
+export { Button } from './components/Button/Button';

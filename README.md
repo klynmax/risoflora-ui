@@ -22,6 +22,6 @@ Paleta de cores utilizadas no desenvolvimento da biblioteca
 |Nome da Cor|Código hexadecimal|Estado|
 |:-------:|:----:|:----:|
 |<font color="#4caf50">Green</font>|`#4caf50`|`success`|
-|<font color="#2196f3">blue</font>|`#4caf50`|`info`|
+|<font color="#2196f3">blue</font>|`#2196f3`|`info`|
 |<font color="#ffb300">yellow</font>|`#ffb300`|`warning`|
 |<font color="#f44336">red</font>|`#f44336`|`error`|

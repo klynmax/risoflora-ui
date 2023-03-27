@@ -88,11 +88,10 @@
     font-size: 9px;
     color: #fff;
     font-weight: bold;
-
     display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* .notify-text {
