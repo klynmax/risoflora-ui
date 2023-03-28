@@ -26,7 +26,7 @@ const TemplateDefault = (args: any) => (
 
 const Text = (args: DividerProps) => (
     <>
-        <Divider {...args} name="Divider" />
+        <Divider {...args} name="Horizontal" />
     </>
 )
 
