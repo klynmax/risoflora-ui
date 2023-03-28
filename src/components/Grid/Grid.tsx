@@ -1,25 +1,25 @@
-import React, { CSSProperties } from "react";
-import './style.css'
+import React, { CSSProperties } from 'react';
+import './style.css';
 
 type JustifyItems =
- | "flex-start" 
- | "flex-end" 
- | "center" 
- | "space-between" 
- | "space-around" 
- | "space-evenly"
+ | 'flex-start' 
+ | 'flex-end' 
+ | 'center' 
+ | 'space-between' 
+ | 'space-around' 
+ | 'space-evenly';
 
 type FlexDirectionItems =
-| "row" 
-| "row-reverse" 
-| "column" 
-| "column-reverse"
+| 'row' 
+| 'row-reverse' 
+| 'column' 
+| 'column-reverse';
 
 type AlignItems = 
-| "stretch" 
-| "center" 
-| "start" 
-| "end"
+| 'stretch' 
+| 'center' 
+| 'start' 
+| 'end';
 
 /**
  * Testar a possibilidade de ter esse array para melhorar as condições
@@ -38,7 +38,7 @@ export type GridProps = {
     lg?: number,
     xl?: number,
     style?: CSSProperties
-}
+};
 
 export const Grid = (
     {

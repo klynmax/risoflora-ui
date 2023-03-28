@@ -4,7 +4,7 @@ import './style.css';
 export type AvatarNameProps = {
   style?: React.CSSProperties,
   userName?: string
-}
+};
 
 export const AvatarName = (
   {

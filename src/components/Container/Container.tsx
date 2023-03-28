@@ -5,7 +5,7 @@ export type ContainerProps = {
     children: React.ReactNode,
     style?: React.CSSProperties,
     maxWidth?: string
-}
+};
 
 export const Container = (
     {

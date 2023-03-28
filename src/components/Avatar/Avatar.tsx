@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.css';
 
-type Variant = "circular" | "square" | "rounded"
-type Group = "limited" | "all"
+type Variant = 'circular' | 'square' | 'rounded';
+type Group = 'limited' | 'all';
 
 export type AvatarProps = {
     children: React.ReactNode,
@@ -15,7 +15,7 @@ export type AvatarProps = {
     value?: number
     group?: Group,
     spacing?: boolean
-}
+};
 
 export const Avatar = (
     {

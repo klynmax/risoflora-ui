@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css';
 
-type Variant = "text" | "contained" | "outlined";
-type Size = "small" | "medium" | "large";
+type Variant = 'text' | 'contained' | 'outlined';
+type Size = 'small' | 'medium' | 'large';
 type Color = 'blue' | 'red' | 'orange' | 'yellow' | 'green' | 'cyan' | 'violet';
 
 export type ButtonProps = {
     children: React.ReactNode,
-    style?: React.CSSProperties | any
+    style?: React.CSSProperties
     onClick?: () => void,
     variant?: Variant,
     size?: Size,
