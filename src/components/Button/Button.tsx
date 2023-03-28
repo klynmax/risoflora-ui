@@ -1,10 +1,9 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 import './style.css';
 
 type Variant = "text" | "contained" | "outlined";
-type Size = "small" | "medium" | "large"
-
-type Color = 'red' | 'orange' | 'yellow' | 'green' | 'cyan' | 'blue' | 'violet';
+type Size = "small" | "medium" | "large";
+type Color = 'blue' | 'red' | 'orange' | 'yellow' | 'green' | 'cyan' | 'violet';
 
 export type ButtonProps = {
     children: React.ReactNode,
@@ -13,7 +12,9 @@ export type ButtonProps = {
     variant?: Variant,
     size?: Size,
     disabled?: boolean
-    color?: Color
+    color?: Color,
+    startIcon?: React.ReactNode,
+    endIcon?: React.ReactNode
 };
 
 export const Button = (
@@ -24,42 +25,11 @@ export const Button = (
         onClick,
         size,
         disabled,
-        color
+        color,
+        startIcon,
+        endIcon
     }: ButtonProps
 ) => {
-
-    // function cores(name?: string) {
-    //     let result
-    //     if(name === 'red') {
-    //         result = "#F44336"
-    //     } else if (name === 'blue') {
-    //         result = "#000"
-    //     }
-
-    //     return result
-    // }
-
-    // function teste(name: string) {
-    //     return {
-    //         style: {
-    //             backgroundColor: cores(name)
-    //         }
-    //     }
-    // }
-
-    const red = "#F44336"
-    const orange = "FA8900"
-    const yellow = "FFB300"
-    const green = "4CAF50"
-    const cyan = "00BCD4"
-    const blue = "2196f3"
-    const violet = "673AB7"
-
-    // const casa = teste(color? color : red)
-
-    // console.log('123', casa.style)
-    // console.log('123456', style)
-    // console.log('color', color)
 
     return (
         <>
@@ -84,7 +54,9 @@ export const Button = (
                         disabled={disabled}
                         color={color}
                     >
+                        {startIcon ? <span className="start-icon" >{startIcon}</span> : null}
                         {children}
+                        {endIcon ? <span className="end-icon" >{endIcon}</span> : null}
                     </button>
                 )
             }
@@ -108,7 +80,9 @@ export const Button = (
                         onClick={onClick}
                         disabled={disabled}
                     >
+                        {startIcon ? <span className="start-icon" >{startIcon}</span> : null}
                         {children}
+                        {endIcon ? <span className="end-icon" >{endIcon}</span> : null}
                     </button>
                 )
             }
@@ -132,7 +106,9 @@ export const Button = (
                         onClick={onClick}
                         disabled={disabled}
                     >
+                        {startIcon ? <span className="start-icon" >{startIcon}</span> : null}
                         {children}
+                        {endIcon ? <span className="end-icon" >{endIcon}</span> : null}
                     </button>
                 )
             }
@@ -157,10 +133,12 @@ export const Button = (
                         disabled={disabled}
                         color={color}
                     >
+                        {startIcon ? <span className="start-icon" >{startIcon}</span> : null}
                         {children}
+                        {endIcon ? <span className="end-icon" >{endIcon}</span> : null}
                     </button>
                 )
             }
         </>
-    )
+    );
 }

@@ -14,14 +14,3 @@ Para que o usuário possa testar a biblioteca antes de publica-la em ambiente de
 Para publicação do pacote basta executar:
 `npm adduser` ou `yarn adduser` e faça o login com sua conta npm.
 Após fazer login com sua conta basta rodar o comando `npm run deploy` e finalizar o processo de publicação.
-
-## Cores do tema
-
-Paleta de cores utilizadas no desenvolvimento da biblioteca
-
-|Nome da Cor|Código hexadecimal|Estado|
-|:-------:|:----:|:----:|
-|<font color="#4caf50">Green</font>|`#4caf50`|`success`|
-|<font color="#2196f3">blue</font>|`#2196f3`|`info`|
-|<font color="#ffb300">yellow</font>|`#ffb300`|`warning`|
-|<font color="#f44336">red</font>|`#f44336`|`error`|

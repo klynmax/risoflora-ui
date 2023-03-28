@@ -50,6 +50,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "react-icons": "^4.8.0",
     "vite-plugin-dts": "^2.1.0",
     "vite-tsconfig-paths": "^4.0.7"
   }

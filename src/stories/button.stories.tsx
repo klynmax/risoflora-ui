@@ -1,6 +1,14 @@
 import { Button, ButtonProps } from "src/components/Button/Button";
 import { Grid } from "src/components/Grid/Grid";
-import type { Meta, StoryObj } from '@storybook/react';
+import { 
+    FaTrash, 
+    FaRegPaperPlane, 
+    FaCog,
+    FaExclamationTriangle,
+    FaPrint,
+    FaSearch,
+    FaSpinner
+} from "../../node_modules/react-icons/fa";
 
 const meta = {
     title: "Inputs/Button",
@@ -10,7 +18,6 @@ const meta = {
 
 export default meta;
   
-
 const TemplateDefault = (args: ButtonProps) => (
     <Button 
         {...args}
@@ -137,7 +144,7 @@ const TemplateDisabled = (args: ButtonProps) => (
             Text
         </Button>
     </Grid>
-)
+);
 
 const TemplateColorButton = (args: ButtonProps) => (
     <>
@@ -303,10 +310,366 @@ const TemplateColorButton = (args: ButtonProps) => (
             </Grid>
         </Grid>
     </>
-)
+);
+
+const TemplateStartButtonIcon = (args: ButtonProps) => (
+    <>
+        <Grid style={{marginBottom: 10}}>
+            <Grid spacing={10}>
+                <Button 
+                    {...args}
+                    startIcon={<FaRegPaperPlane />}
+                >
+                    Send
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaTrash />}
+                    color="red"
+                >
+                    Delete
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaCog />}
+                    color="orange"
+                >
+                    Config
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaExclamationTriangle />}
+                    color="yellow"
+                >
+                    Attention
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaPrint />}
+                    color="green"
+                >
+                    Print
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaSearch />}
+                    color="cyan"
+                >
+                    Search
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaSpinner />}
+                    color="violet"
+                >
+                    Spinner
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid style={{marginBottom: 10}}>
+            <Grid spacing={10}>
+                <Button 
+                    {...args}
+                    startIcon={<FaRegPaperPlane />}
+                    variant="outlined"
+                >
+                    Send
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaTrash />}
+                    color="red"
+                    variant="outlined"
+                >
+                    Delete
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaCog />}
+                    color="orange"
+                    variant="outlined"
+                >
+                    Config
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaExclamationTriangle />}
+                    color="yellow"
+                    variant="outlined"
+                >
+                    Attention
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaPrint />}
+                    color="green"
+                    variant="outlined"
+                >
+                    Print
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaSearch />}
+                    color="cyan"
+                    variant="outlined"
+                >
+                    Search
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaSpinner />}
+                    color="violet"
+                    variant="outlined"
+                >
+                    Spinner
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid style={{marginBottom: 10}}>
+            <Grid spacing={10}>
+                <Button 
+                    {...args}
+                    startIcon={<FaRegPaperPlane />}
+                    variant="text"
+                >
+                    Send
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaTrash />}
+                    color="red"
+                    variant="text"
+                >
+                    Delete
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaCog />}
+                    color="orange"
+                    variant="text"
+                >
+                    Config
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaExclamationTriangle />}
+                    color="yellow"
+                    variant="text"
+                >
+                    Attention
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaPrint />}
+                    color="green"
+                    variant="text"
+                >
+                    Print
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaSearch />}
+                    color="cyan"
+                    variant="text"
+                >
+                    Search
+                </Button>
+                <Button 
+                    {...args}
+                    startIcon={<FaSpinner />}
+                    color="violet"
+                    variant="text"
+                >
+                    Spinner
+                </Button>
+            </Grid>
+        </Grid>
+    </>
+);
+
+const TemplateEndButtonIcon = (args: ButtonProps) => (
+    <>
+        <Grid style={{marginBottom: 10}}>
+            <Grid spacing={10}>
+                <Button 
+                    {...args}
+                    endIcon={<FaRegPaperPlane />}
+                >
+                    Send
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaTrash />}
+                    color="red"
+                >
+                    Delete
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaCog />}
+                    color="orange"
+                >
+                    Config
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaExclamationTriangle />}
+                    color="yellow"
+                >
+                    Attention
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaPrint />}
+                    color="green"
+                >
+                    Print
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaSearch />}
+                    color="cyan"
+                >
+                    Search
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaSpinner />}
+                    color="violet"
+                >
+                    Spinner
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid style={{marginBottom: 10}}>
+            <Grid spacing={10}>
+                <Button 
+                    {...args}
+                    endIcon={<FaRegPaperPlane />}
+                    variant="outlined"
+                >
+                    Send
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaTrash />}
+                    color="red"
+                    variant="outlined"
+                >
+                    Delete
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaCog />}
+                    color="orange"
+                    variant="outlined"
+                >
+                    Config
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaExclamationTriangle />}
+                    color="yellow"
+                    variant="outlined"
+                >
+                    Attention
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaPrint />}
+                    color="green"
+                    variant="outlined"
+                >
+                    Print
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaSearch />}
+                    color="cyan"
+                    variant="outlined"
+                >
+                    Search
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaSpinner />}
+                    color="violet"
+                    variant="outlined"
+                >
+                    Spinner
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid style={{marginBottom: 10}}>
+            <Grid spacing={10}>
+                <Button 
+                    {...args}
+                    endIcon={<FaRegPaperPlane />}
+                    variant="text"
+                >
+                    Send
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaTrash />}
+                    color="red"
+                    variant="text"
+                >
+                    Delete
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaCog />}
+                    color="orange"
+                    variant="text"
+                >
+                    Config
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaExclamationTriangle />}
+                    color="yellow"
+                    variant="text"
+                >
+                    Attention
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaPrint />}
+                    color="green"
+                    variant="text"
+                >
+                    Print
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaSearch />}
+                    color="cyan"
+                    variant="text"
+                >
+                    Search
+                </Button>
+                <Button 
+                    {...args}
+                    endIcon={<FaSpinner />}
+                    color="violet"
+                    variant="text"
+                >
+                    Spinner
+                </Button>
+            </Grid>
+        </Grid>
+    </>
+);
 
 export const Default = TemplateDefault.bind({});
 export const variant = TemplateVariant.bind({});
 export const size = TemplateSize.bind({});
 export const disabled = TemplateDisabled.bind({});
 export const color = TemplateColorButton.bind({});
+export const startIcon = TemplateStartButtonIcon.bind({});
+export const endIcon = TemplateEndButtonIcon.bind({});
