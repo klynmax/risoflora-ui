@@ -42,7 +42,7 @@ export const AvatarName = (
 
   return (
     <div 
-      {...stringAvatar(userName? userName : 'Maria Ediarda')}
+      {...stringAvatar(userName? userName : 'Maria Eduarda')}
       className="name" 
     />
   )

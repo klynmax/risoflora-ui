@@ -12,17 +12,17 @@
 
 .image {
     border-radius: 50%;
-    height: 50px;
+    max-height: 50px;
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
     /* border-width: 2px; */
 }
 
 .image-group {
     border-radius: 50%;
-    height: 50px;
+    max-height: 50px;
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
     background-color: black;
     color: #fff;
 }
@@ -33,47 +33,47 @@
 
 .image-group-rouded {
     border-radius: 10%;
-    height: 50px;
+    max-height: 50px;
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
     background-color: black;
     color: #fff;
 }
 
 .image-group-square {
-    height: 50px;
+    max-height: 50px;
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
     background-color: black;
     color: #fff;
 }
 
 .xs {
-    height: 20px;
-    width: 20px; 
+    max-height: 20px;
+    max-width: 20px; 
 }
 
 .sm {
-    height: 30px;
-    width: 30px; 
+    max-height: 30px;
+    max-width: 30px; 
 }
 
-.lg {
-    height: 60px;
-    width: 60px; 
+.xl {
+    max-height: 60px;
+    max-width: 60px; 
 }
 
 .square {
-    height: 50px;
+    max-height: 50px;
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
 }
 
 .rounded {
     border-radius: 10%;
-    height: 50px;
+    max-height: 50px;
     object-fit: cover;
-    width: 50px;
+    max-width: 50px;
 }
 
 .notify-badge {

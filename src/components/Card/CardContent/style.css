@@ -1,0 +1,5 @@
+.card-content {
+    padding: 10px 16px;
+    display: grid;
+    flex-direction: column;
+}

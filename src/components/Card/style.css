@@ -1,0 +1,46 @@
+.card-container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    min-height: 200px;
+}
+
+.card-container-outlined {
+    border-radius: 5px;
+    border-width: 1px;
+    width: 300px;
+    min-height: 200px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.blue {
+    background-color: #2196f3;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.orange {
+    background-color: #db8000;
+}
+
+.yellow {
+    background-color: #ffb300;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+.cyan {
+    background-color: #00BCD4;
+}
+
+.violet {
+    background-color: #673AB7;
+}

@@ -145,7 +145,7 @@ export const Avatar = (
                         size === 'xs' ? `image xs` :
                         size === 'sm' ? `image sm` :
                         size === 'md' ? `image` :
-                        size === 'lg' ? `image lg` :
+                        size === 'xl' ? `image xl` :
                         'image'
                     }
                     src={src}
