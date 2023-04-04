@@ -59,7 +59,7 @@ const TemplateSize = (args: AvatarProps) => (
          <Avatar 
             {...args}
             src="https://avatars.githubusercontent.com/u/15609339"
-            size="lg"
+            size="xl"
         />
         <Avatar 
             {...args}
@@ -106,7 +106,7 @@ const TemplateGroup = (args: AvatarProps) => (
                 group="limited"
             />
         </Grid>
-        <Grid>
+        <Grid style={{marginTop: 10}}>
             <Avatar 
                 {...args}
                 src={users}

@@ -10,3 +10,4 @@ export { CardMedia } from './components/Card/CardMedia/CardMedia';
 export { CardContent } from './components/Card/CardContent/CardContent';
 export { CardAction } from './components/Card/CardAction/CardAction';
 export { CardHeader } from './components/Card/CardHeader/CardHeader';
+export { AvatarGroup } from './components/AvatarGroup/AvatarGroup';
