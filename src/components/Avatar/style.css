@@ -18,12 +18,25 @@
     /* border-width: 2px; */
 }
 
-.circular {
+.image-circular {
     border-radius: 50%;
     max-height: 50px;
     object-fit: cover;
     max-width: 50px;
     /* border-width: 2px; */
+}
+
+.image-square {
+    max-height: 50px;
+    object-fit: cover;
+    max-width: 50px;
+}
+
+.image-rounded {
+    border-radius: 10%;
+    max-height: 50px;
+    object-fit: cover;
+    max-width: 50px;
 }
 
 .image-group {
@@ -71,26 +84,108 @@
     max-width: 60px; 
 }
 
-.square {
-    max-height: 50px;
-    object-fit: cover;
-    max-width: 50px;
-}
-
-.rounded {
-    border-radius: 10%;
-    max-height: 50px;
-    object-fit: cover;
-    max-width: 50px;
-}
-
 .notify-badge {
     border-radius: 50%;
-    background-color: red;
+    background-color: #f44336;
     position: absolute;
     height: 20px;
     width: 20px;
+    margin-left: 40px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 9px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-badge-sm {
+    border-radius: 50%;
+    background-color: #f44336;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 9px;
+    color: #f44336;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-badge-md {
+    border-radius: 50%;
+    background-color: #f44336;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
     margin-left: 30px;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 9px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-badge-square-sm {
+    border-radius: 50%;
+    background-color: #f44336;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-top: -5px;
+    text-align: center;
+    font-size: 9px;
+    color: #f44336;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-badge-square-md {
+    border-radius: 50%;
+    background-color: #f44336;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    overflow: hidden;
+    margin-left: 35px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 9px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-badge-square-xl {
+    border-radius: 50%;
+    background-color: #f44336;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    margin-left: 50px;
     margin-top: -10px;
     text-align: center;
     font-size: 9px;

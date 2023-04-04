@@ -14,8 +14,6 @@ export type AvatarProps = {
     alt?: string,
     notify?: boolean
     value?: number
-    group?: Group,
-    spacing?: boolean
 };
 
 export const Avatar = (
@@ -26,166 +24,111 @@ export const Avatar = (
         src,
         alt,
         notify,
-        value,
-        group,
-        spacing
+        value
     }: AvatarProps
 ) => {
 
-    const max = 6;
-
     return(
-        // <>
-        // {
-        //     group === 'limited' && (
-        //         <div className="flex flex-row">
-        //             {
-        //                 src.filter((user: any, i: any) => i < max)
-        //                 .map((item: any) => (
-        //                     <div className={spacing === true ? `flex-spacing flex-row` : `flex flex-row effect`}>
-        //                         <img 
-        //                             style={style} 
-        //                             className={
-        //                                 variant === 'square' ? `square` : 
-        //                                 variant === 'rounded' ? `rounded` :
-        //                                 size === size ? `image ${size}` :
-        //                                 // size === 'xs' ? `image xs` :
-        //                                 // size === 'sm' ? `image sm` :
-        //                                 // size === 'md' ? `image` :
-        //                                 // size === 'lg' ? `image lg` :
-        //                                 'image'
-        //                             }
-        //                             src={item}
-        //                             alt={alt}
-        //                         />
-        //                     </div>
-        //                 ))
-        //             }
-        //             <div 
-        //                 className={
-        //                     variant === 'rounded' ? `image-group-rouded` :
-        //                     variant === 'square' ? `image-group-square` :
-        //                     size === size ? `image-group ${size}` :
-        //                     // size === 'xs' ? `image-group xs` : 
-        //                     // size === 'sm' ? `image-group sm` :
-        //                     // size === 'md' ? `image-group` :
-        //                     // size === 'lg' ? `image-group lg` :
-        //                     `image-group`
-        //                 }
-        //             >
-        //                 <div 
-        //                     className={
-        //                         size === 'xs' ? `group-text-xs` :
-        //                         size === 'sm' ? `group-text-sm` :
-        //                         size === 'xl' ? `group-text-xl` :
-        //                         `group-text`
-        //                     }
-        //                 >
-        //                     +{src.length - max}
-        //                 </div>
-        //             </div> 
-        //         </div>
-        //     )
-        // }
-        // { 
-        //     group === 'all' && (
-        //     <div className="flex flex-row">
-        //     {
-        //         notify === true && (
-        //             <div 
-        //                 className={
-        //                     variant === 'square' || variant === 'rounded' ? `notify-badge-square` : 
-        //                     `notify-badge`
-        //                 }
-        //             >
-        //                 {value !== undefined && value > 99 ? '99+' : value}
-        //             </div>
-        //         )
-        //     }
-        //     {
-        //         src.map((item: any) => (
-        //             <div className={spacing === true ? `flex-spacing flex-row` : `flex flex-row effect`}>
-        //             <img 
-        //                 style={style} 
-        //                 className={
-        //                     variant === 'square' ? `square` : 
-        //                     variant === 'rounded' ? `rounded` :
-        //                     size === 'xs' ? `image xs` :
-        //                     size === 'sm' ? `image sm` :
-        //                     size === 'md' ? `image` :
-        //                     size === 'lg' ? `image lg` :
-        //                     'image'
-        //                 }
-        //                 src={item}
-        //                 alt={alt}
-        //             />
-        //             </div>
-        //         ))
-        //     }
-        //     </div>
-        //     )
-        // }
-        // {
-        //     group === undefined && (
-        //         <div className="flex flex-row">
-        //         {
-        //             notify === true && (
-        //                 <div 
-        //                     className={
-        //                         variant === 'square' || variant === 'rounded' ? `notify-badge-square` : 
-        //                         `notify-badge`
-        //                     }
-        //                 >
-        //                     {value !== undefined && value > 99 ? '99+' : value}
-        //                 </div>
-        //             )
-        //         }
-        //         <img 
-        //             style={style} 
-        //             className={
-        //                 variant === 'square' ? `square` : 
-        //                 variant === 'rounded' ? `rounded` :
-        //                 size === 'xs' ? `${variant} xs` :
-        //                 size === 'sm' ? `${variant} sm` :
-        //                 size === 'md' ? `${variant}` :
-        //                 size === 'xl' ? `${variant} xl` :
-        //                 'image'
-        //             }
-        //             src={src}
-        //             alt={alt}
-        //         />
-        //     </div>
-        //     )
-        // }
-        // </>
         <div className="flex flex-row">
             {
-                // condição: notify === true && size === 'md' || size === undefined
-                notify === true && (
+                notify === true && variant === 'circular' && (
                     <div 
                         className={
-                            variant === 'square' || variant === 'rounded' ? `notify-badge-square` : 
-                                `notify-badge`
+                            size === 'xs' ? '' :
+                            size === 'sm' ? `notify-badge-sm` :
+                            size === 'md' ? `notify-badge-md` :
+                            'notify-badge'
                         }
                         >
-                            {value !== undefined && value > 99 ? '99+' : value}
+                            {
+                                size === 'xs' ? '' :
+                                value !== undefined && value > 99 ? '99+' : value
+                            }
+                    </div>
+                )
+                }
+                {
+                    notify === true && variant === 'square' && (
+                        <div 
+                            className={
+                                size === 'xs' ? '' :
+                                size === 'sm' ? `notify-badge-square-sm` :
+                                size === 'md' ? `notify-badge-square-md` :
+                                size === 'xl' ? `notify-badge-square-xl` :
+                                'notify-badge'
+                            }
+                            >
+                                {
+                                    size === 'xs' ? '' :
+                                    value !== undefined && value > 99 ? '99+' : value
+                                }
                         </div>
                     )
                 }
-                <img 
-                    style={style} 
-                    className={
-                        variant === 'square' ? `square` : 
-                        variant === 'rounded' ? `rounded` :
-                        size === 'xs' ? `${variant} xs` :
-                        size === 'sm' ? `${variant} sm` :
-                        size === 'md' ? `${variant}` :
-                        size === 'xl' ? `${variant} xl` :
-                        'image'
-                    }
-                    src={src}
-                    alt={alt}
-                />
+                {
+                    notify === true && variant === 'rounded' && (
+                        <div 
+                            className={
+                                size === 'xs' ? '' :
+                                size === 'sm' ? `notify-badge-square-sm` :
+                                size === 'md' ? `notify-badge-square-md` :
+                                size === 'xl' ? `notify-badge-square-xl` :
+                                'notify-badge'
+                            }
+                            >
+                                {
+                                    size === 'xs' ? '' :
+                                    value !== undefined && value > 99 ? '99+' : value
+                                }
+                        </div>
+                    )
+                }
+                {
+                    variant === 'circular' ? (
+                        <img 
+                            style={style}
+                            className={
+                                size === size ? `image-circular ${size}`:
+                                `image-circular`
+                            }
+                            src={src}
+                            alt={alt}
+                        />
+                    )
+                    :
+                    variant === 'square' ? (
+                        <img 
+                            style={style}
+                            className={
+                                size === size ? `image-square ${size}`:
+                                `image-square`
+                            }
+                            src={src}
+                            alt={alt}
+                        />
+                    )
+                    :
+                    variant === 'rounded' ? (
+                        <img 
+                            style={style}
+                            className={
+                                size === size ? `image-rounded ${size}`:
+                                `image-rounded`
+                            }
+                            src={src}
+                            alt={alt}
+                        />
+                    )
+                    :
+                    (
+                        <img 
+                            style={style}
+                            className="image-circular"
+                            src={src}
+                            alt={alt}
+                        />
+                    )
+                }
             </div>
     )
 }

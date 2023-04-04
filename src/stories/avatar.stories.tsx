@@ -29,181 +29,37 @@ const TeplateDefault = (args: AvatarProps) => (
     />
 );
 
-const TemplateNotify = (args: AvatarProps) => (
-    <Grid spacing={30}>
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/15609339"
-            notify={true}
-            value={100}
-        />
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/10924138"
-            variant="rounded"
-            notify={true}
-            value={20}
-        />
-       <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/9625224"
-            variant="square"
-            notify={true}
-            value={8}
-        />
-    </Grid>
-);
-
-const TemplateSize = (args: AvatarProps) => (
-    <Grid spacing={30}>
-         <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/15609339"
-            size="xl"
-        />
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/15609339"
-        />
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/15609339"
-            size="sm"
-        />
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/15609339"
-            size="xs"
-        />
-    </Grid>
-);
-
-const TemplateVariant = (args: AvatarProps) => (
-    <Grid spacing={30}>
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/15609339"
-        />
-        <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/10924138"
-            variant="rounded"
-        />
-       <Avatar 
-            {...args}
-            src="https://avatars.githubusercontent.com/u/9625224"
-            variant="square"
-        />
-    </Grid> 
-)
-
-const TemplateGroup = (args: AvatarProps) => (
+const TeplateNotification = (args: AvatarProps) => (
     <>
-        <Grid>
+        <Avatar 
+            {...args} 
+            src="https://avatars.githubusercontent.com/u/15609339"
+            notify={true}
+            variant="circular"
+            value={5}
+        />
+        <div style={{marginTop: 10}}>
             <Avatar 
-                {...args}
-                src={users}
-                group="limited"
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="limited"
-                spacing={true}
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="all"
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="all"
-                spacing={true}
-            />
-        </Grid>
-
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="limited"
-                variant="rounded"
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="limited"
-                spacing={true}
-                variant="rounded"
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="all"
-                variant="rounded"
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="all"
-                spacing={true}
-                variant="rounded"
-            />
-        </Grid>
-
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="limited"
+                {...args} 
+                src="https://avatars.githubusercontent.com/u/15609339"
+                notify={true}
                 variant="square"
+                value={50}
             />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
+        </div>
+        <div style={{marginTop: 10}}>
             <Avatar 
-                {...args}
-                src={users}
-                group="limited"
-                spacing={true}
-                variant="square"
+                {...args} 
+                src="https://avatars.githubusercontent.com/u/15609339"
+                notify={true}
+                variant="rounded"
+                value={100}
             />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="all"
-                variant="square"
-            />
-        </Grid>
-        <Grid style={{marginTop: 10}}>
-            <Avatar 
-                {...args}
-                src={users}
-                group="all"
-                spacing={true}
-                variant="square"
-            />
-        </Grid>
+        </div>
     </>
-)
+);
+
+
 
 export const Default = TeplateDefault.bind({});
-export const notify = TemplateNotify.bind({});
-export const size = TemplateSize.bind({});
-export const variant = TemplateVariant.bind({});
-export const group = TemplateGroup.bind({});
+export const notification = TeplateNotification.bind({});
