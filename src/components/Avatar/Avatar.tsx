@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 
 type Variant = 'circular' | 'square' | 'rounded';
-type Group = 'limited' | 'all';
 type Size = 'xs' | 'sm' | 'md' | 'xl'
 
 export type AvatarProps = {
