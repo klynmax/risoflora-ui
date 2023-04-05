@@ -5,11 +5,10 @@ type Variant = "circular" | "square" | "rounded";
 type Size = "xs" | "sm" | "md" | "xl";
 
 export type AvatarProps = {
-  children: React.ReactNode;
   style?: React.CSSProperties;
   variant?: Variant;
   size?: Size;
-  src?: any;
+  src?: string;
   alt?: string;
   notify?: boolean;
   value?: number;
