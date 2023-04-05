@@ -1,241 +1,255 @@
-.flex { 
-    display: flex;
-    margin-right: -10px;
+.flex {
+  display: flex;
+  margin-right: -10px;
 }
 
-.flex-spacing { 
-    display: flex;
-    margin-right: 5px
+.flex-spacing {
+  display: flex;
+  margin-right: 5px;
 }
 
-.flex-row { flex-direction: row; }
+.flex-row {
+  flex-direction: row;
+}
 
 .image {
-    border-radius: 50%;
-    max-height: 50px;
-    object-fit: cover;
-    max-width: 50px;
-    /* border-width: 2px; */
+  border-radius: 50%;
+  max-height: 50px;
+  object-fit: cover;
+  max-width: 50px;
 }
 
 .image-circular {
-    border-radius: 50%;
-    max-height: 50px;
-    object-fit: cover;
-    max-width: 50px;
-    /* border-width: 2px; */
+  border-radius: 50%;
+  max-height: 50px;
+  object-fit: cover;
+  max-width: 50px;
 }
 
 .image-square {
-    max-height: 50px;
-    object-fit: cover;
-    max-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
+  max-width: 50px;
 }
 
 .image-rounded {
-    border-radius: 10%;
-    max-height: 50px;
-    object-fit: cover;
-    max-width: 50px;
+  border-radius: 10%;
+  max-height: 50px;
+  object-fit: cover;
+  max-width: 50px;
 }
 
 .image-group {
-    border-radius: 50%;
-    height: 50px;
-    object-fit: cover;
-    width: 50px;
-    background-color: black;
-    color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+  background-color: black;
+  color: #fff;
 }
 
 .effect:hover {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .image-group-rouded {
-    border-radius: 10%;
-    height: 50px;
-    object-fit: cover;
-    width: 50px;
-    background-color: black;
-    color: #fff;
+  border-radius: 10%;
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+  background-color: black;
+  color: #fff;
 }
 
 .image-group-square {
-    height: 50px;
-    object-fit: cover;
-    width: 50px;
-    background-color: black;
-    color: #fff;
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+  background-color: black;
+  color: #fff;
 }
 
 .xs {
-    max-height: 30px;
-    max-width: 30px; 
+  max-height: 30px;
+  max-width: 30px;
 }
 
 .sm {
-    max-height: 30px;
-    max-width: 30px; 
+  max-height: 30px;
+  max-width: 30px;
 }
 
 .md {
-    max-height: 60px;
-    max-width: 60px; 
+  max-height: 60px;
+  max-width: 60px;
 }
 
 .notify-badge {
-    border-radius: 50%;
-    background-color: #f44336;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    margin-left: 40px;
-    margin-top: -10px;
-    text-align: center;
-    font-size: 9px;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #f44336;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin-left: 40px;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .notify-badge-sm {
-    border-radius: 50%;
-    background-color: #f44336;
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    overflow: hidden;
-    margin-left: 20px;
-    margin-top: -5px;
-    text-align: center;
-    font-size: 9px;
-    color: #f44336;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #f44336;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 9px;
+  color: #f44336;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .notify-badge-md {
-    border-radius: 50%;
-    background-color: #f44336;
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    overflow: hidden;
-    margin-left: 30px;
-    margin-top: -5px;
-    text-align: center;
-    font-size: 9px;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #f44336;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .notify-badge-square-sm {
-    border-radius: 50%;
-    background-color: #f44336;
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    overflow: hidden;
-    margin-left: 25px;
-    margin-top: -5px;
-    text-align: center;
-    font-size: 9px;
-    color: #f44336;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #f44336;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  overflow: hidden;
+  margin-left: 25px;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 9px;
+  color: #f44336;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .notify-badge-square-md {
-    border-radius: 50%;
-    background-color: #f44336;
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    overflow: hidden;
-    margin-left: 35px;
-    margin-top: -10px;
-    text-align: center;
-    font-size: 9px;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #f44336;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  overflow: hidden;
+  margin-left: 35px;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .notify-badge-square-xl {
-    border-radius: 50%;
-    background-color: #f44336;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    overflow: hidden;
-    margin-left: 50px;
-    margin-top: -10px;
-    text-align: center;
-    font-size: 9px;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #f44336;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-
-/* .notify-text {
-    margin-top: 3px;
-    font-weight: bold;
-} */
 
 .notify-badge-square {
-    border-radius: 50%;
-    background-color: red;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    margin-left: 40px;
-    margin-top: -15px;
-    text-align: center;
-    font-size: 9px;
-    color: #fff;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin-left: 40px;
+  margin-top: -15px;
+  text-align: center;
+  font-size: 9px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .group-text {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .group-text-xs {
-    font-size: 9px;
-    margin-top: 2px;
-    text-align: center;
+  font-size: 9px;
+  margin-top: 2px;
+  text-align: center;
 }
 
 .group-text-sm {
-    margin-top: 2px;
-    text-align: center;
+  margin-top: 2px;
+  text-align: center;
 }
 
 .group-text-lg {
-    margin-top: 16px;
-    text-align: center;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.border-circular {
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.border-square {
+  border-width: 2px;
+}
+
+.border-rounded {
+  border-width: 2px;
+  border-radius: 10%;
+}
+
+.border {
+  border-width: 2px;
+  border-radius: 50%;
 }
